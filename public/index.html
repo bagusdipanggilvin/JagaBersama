@@ -41,6 +41,7 @@
           <li><a href="#beranda" class="nav-item active">Beranda</a></li>
           <li><a href="#edukasi" class="nav-item">Edukasi</a></li>
           <li><a href="#quiz" class="nav-item">Kuis Pemahaman</a></li>
+          <li><a href="#galeri" class="nav-item">Galeri</a></li>
           <li><a href="#lapor" class="nav-item">Lapor & Cek Status</a></li>
         </ul>
       </nav>
@@ -248,6 +249,163 @@
             <button class="btn btn-outline w-full" id="btnHideReview" style="margin-top: 20px;">Tutup Tinjauan</button>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: GALERI (TESTIMONI & PENDAPAT AHLI) -->
+    <section id="sec-galeri" class="page-section hidden" style="padding: 55px 0 85px 0;">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 35px;">
+          <h2 style="font-size: 30px; margin-bottom: 10px;">Galeri Dampak & Pendampingan</h2>
+          <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto; font-size: 14.5px;">Dengarkan suara perjuangan para penyintas serta pandangan dari para ahli pendamping kami.</p>
+        </div>
+
+        <!-- Tabs Navigation -->
+        <div class="tabs-navigation">
+          <button class="tab-btn active" id="btnTabTestimonial">Cerita Korban</button>
+          <button class="tab-btn" id="btnTabExpert">Ahli Bicara</button>
+        </div>
+
+        <!-- Testimonial Carousel -->
+        <div id="carouselTestimonial" class="carousel-wrapper">
+          <div class="carousel-viewport">
+            <div class="carousel-inner" id="innerTestimonial">
+              <!-- Slide 1 -->
+              <div class="carousel-slide">
+                <div class="testimonial-card">
+                  <div class="quote-mark-large">“</div>
+                  <p class="carousel-quote">Laporan saya ditangani serius. Sebelumnya pikir tidak ada yang bisa bantu.</p>
+                  <div class="carousel-avatar-wrap">
+                    <div class="carousel-avatar">A</div>
+                    <div class="carousel-author-info">
+                      <span class="carousel-author-name">Asti</span>
+                      <span class="carousel-author-status">Penyintas Cyberbullying, Jakarta</span>
+                      <div class="carousel-stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div class="carousel-slide">
+                <div class="testimonial-card">
+                  <div class="quote-mark-large">“</div>
+                  <p class="carousel-quote">Platform ini mengubah hidup saya. Komunitas sangat supportif.</p>
+                  <div class="carousel-avatar-wrap">
+                    <div class="carousel-avatar">B</div>
+                    <div class="carousel-author-info">
+                      <span class="carousel-author-name">Budi</span>
+                      <span class="carousel-author-status">Penyintas Physical Bullying, Surabaya</span>
+                      <div class="carousel-stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="carousel-slide">
+                <div class="testimonial-card">
+                  <div class="quote-mark-large">“</div>
+                  <p class="carousel-quote">Prosesnya transparan cepat. Tim Jaga Bersama responsif.</p>
+                  <div class="carousel-avatar-wrap">
+                    <div class="carousel-avatar">C</div>
+                    <div class="carousel-author-info">
+                      <span class="carousel-author-name">Citra</span>
+                      <span class="carousel-author-status">Penyintas Social Bullying, Bandung</span>
+                      <div class="carousel-stars">⭐⭐⭐⭐</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 4 -->
+              <div class="carousel-slide">
+                <div class="testimonial-card">
+                  <div class="quote-mark-large">“</div>
+                  <p class="carousel-quote">Terima kasih mendengarkan. Tidak merasa sendirian lagi.</p>
+                  <div class="carousel-avatar-wrap">
+                    <div class="carousel-avatar">D</div>
+                    <div class="carousel-author-info">
+                      <span class="carousel-author-name">Dini</span>
+                      <span class="carousel-author-status">Penyintas Verbal Bullying, Medan</span>
+                      <div class="carousel-stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-nav-btn prev-btn" id="prevTestimonial">←</button>
+            <button class="carousel-nav-btn next-btn" id="nextTestimonial">→</button>
+          </div>
+          <div class="carousel-indicators" id="indicatorsTestimonial">
+            <div class="indicator-dot active" data-slide="0"></div>
+            <div class="indicator-dot" data-slide="1"></div>
+            <div class="indicator-dot" data-slide="2"></div>
+            <div class="indicator-dot" data-slide="3"></div>
+          </div>
+        </div>
+
+        <!-- Expert Quotes Carousel (Hidden by default) -->
+        <div id="carouselExpert" class="carousel-wrapper hidden">
+          <div class="carousel-viewport">
+            <div class="carousel-inner" id="innerExpert">
+              <!-- Slide 1 -->
+              <div class="carousel-slide">
+                <div class="expert-card">
+                  <span class="expert-tag">Psikolog</span>
+                  <div class="quote-mark-large">“</div>
+                  <p class="carousel-quote">Bullying meninggalkan trauma jangka panjang. Pelaporan aman langkah pertama recovery.</p>
+                  <div class="carousel-avatar-wrap">
+                    <div class="carousel-avatar">SW</div>
+                    <div class="carousel-author-info">
+                      <span class="carousel-author-name">Dr. Sita Wijaya</span>
+                      <span class="carousel-author-status">Psikolog Klinis, Universitas Indonesia</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div class="carousel-slide">
+                <div class="expert-card">
+                  <span class="expert-tag">Sosiolog</span>
+                  <div class="quote-mark-large">“</div>
+                  <p class="carousel-quote">67% korban tidak lapor karena takut. Platform seperti ini memecah barrier.</p>
+                  <div class="carousel-avatar-wrap">
+                    <div class="carousel-avatar">AS</div>
+                    <div class="carousel-author-info">
+                      <span class="carousel-author-name">Prof. Ahmad Sarwono</span>
+                      <span class="carousel-author-status">Sosiolog, ITB</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="carousel-slide">
+                <div class="expert-card">
+                  <span class="expert-tag">Guru BK</span>
+                  <div class="quote-mark-large">“</div>
+                  <p class="carousel-quote">Jaga Bersama membantu identifikasi kasus terselubung. Kolaborasi sangat efektif.</p>
+                  <div class="carousel-avatar-wrap">
+                    <div class="carousel-avatar">RK</div>
+                    <div class="carousel-author-info">
+                      <span class="carousel-author-name">Ibu Ratna Kumala</span>
+                      <span class="carousel-author-status">Kepala BK, SMA Negeri 8 Jakarta</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-nav-btn prev-btn" id="prevExpert">←</button>
+            <button class="carousel-nav-btn next-btn" id="nextExpert">→</button>
+          </div>
+          <div class="carousel-indicators" id="indicatorsExpert">
+            <div class="indicator-dot active" data-slide="0"></div>
+            <div class="indicator-dot" data-slide="1"></div>
+            <div class="indicator-dot" data-slide="2"></div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -472,6 +630,7 @@
           <li><a href="#beranda">Beranda</a></li>
           <li><a href="#edukasi">Edukasi Bullying</a></li>
           <li><a href="#quiz">Kuis Pemahaman</a></li>
+          <li><a href="#galeri">Galeri Dampak</a></li>
           <li><a href="#lapor">Lapor & Cek Status</a></li>
         </ul>
       </div>
@@ -498,6 +657,7 @@
   <script src="js/api.js"></script>
   <script src="js/report.js"></script>
   <script src="js/quiz.js"></script>
+  <script src="js/carousel.js"></script>
   <script src="js/main.js"></script>
 
 </body>
