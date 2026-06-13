@@ -1,0 +1,268 @@
+/* ==========================================================================
+   RESPONSIVE DESIGN BREAKPOINTS
+   ========================================================================== */
+
+/* 1. Desktop Breakpoint (1024px+) */
+@media (min-width: 1024px) {
+  .modal-card {
+    max-width: 600px;
+  }
+}
+
+/* 2. Tablet Breakpoint (768px - 1023px) */
+@media (max-width: 1023px) {
+  :root {
+    --spacing-desktop: 24px;
+  }
+  
+  .container {
+    padding: 0 var(--spacing-desktop);
+  }
+  
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-ctas {
+    justify-content: center;
+  }
+  
+  .bentuk-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .carousel-controls {
+    margin: -180px auto 140px auto;
+  }
+}
+
+/* 3. Mobile Breakpoint (360px - 767px) */
+@media (max-width: 767px) {
+  :root {
+    --spacing-mobile: 16px;
+    --spacing-desktop: 16px;
+  }
+  
+  html {
+    font-size: 14.4px; /* ~10% reduction in font size */
+  }
+  
+  .container {
+    padding: 0 var(--spacing-mobile);
+  }
+  
+  /* Header Mobile Menu Collapse */
+  .hamburger-menu {
+    display: flex;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    top: 73px;
+    left: -100%;
+    width: 80%;
+    height: calc(100vh - 73px);
+    background-color: var(--bg-secondary);
+    border-right: 1px solid var(--border-color);
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.05);
+    transition: left var(--transition-normal);
+    z-index: 99;
+  }
+  
+  .nav-menu.open {
+    left: 0;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    padding: 30px var(--spacing-mobile);
+    gap: 16px;
+  }
+  
+  .nav-links a {
+    font-size: 18px;
+    display: block;
+    width: 100%;
+  }
+  
+  .nav-links a::after {
+    display: none; /* remove desktop underlines */
+  }
+  
+  /* Actions on Mobile */
+  .header-actions {
+    gap: 8px;
+  }
+  
+  .header-actions #btnShowLogin {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  
+  .btnNavbarLapor {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  
+  /* Hero Content */
+  .hero-section {
+    padding: 40px 0;
+  }
+  
+  .hero-content h1 {
+    font-size: 32px;
+  }
+  
+  .hero-content p {
+    font-size: 15px;
+  }
+  
+  .hero-ctas {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .hero-ctas .btn {
+    width: 100%;
+  }
+  
+  /* Stats Grid */
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  /* Forms shapes */
+  .bentuk-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .bentuk-card {
+    padding: 24px;
+  }
+  
+  /* Accordion text wrap */
+  .accordion-header {
+    padding: 16px;
+  }
+  
+  .accordion-title {
+    font-size: 16px;
+  }
+  
+  .accordion-meta {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  
+  .accordion-card.open .accordion-content {
+    padding: 16px;
+  }
+  
+  /* Quiz Layout Mobile */
+  .quiz-wrapper {
+    padding: 24px 16px;
+  }
+  
+  .quiz-question-text {
+    font-size: 18px;
+  }
+  
+  .quiz-option {
+    padding: 12px 14px;
+  }
+  
+  .quiz-result-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .quiz-result-actions .btn {
+    width: 100%;
+  }
+  
+  /* Testimonial & Experts slider stack vertical */
+  .testimonial-card, .expert-card {
+    padding: 24px 16px;
+  }
+  
+  .carousel-quote {
+    font-size: 15px;
+  }
+  
+  .carousel-controls {
+    display: none; /* hide arrow buttons on mobile, swipe or dots are used */
+  }
+  
+  .carousel-indicators {
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  
+  /* Report Form Step node labels */
+  .step-label {
+    display: none; /* hide label text, show only numbers to fit mobile screen */
+  }
+  
+  .steps-indicator {
+    padding: 0 10px;
+  }
+  
+  .steps-indicator::before {
+    left: 24px;
+    right: 24px;
+  }
+  
+  .report-card {
+    padding: 24px 16px;
+  }
+  
+  .form-row-2 {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  
+  .gender-radio-group {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  
+  .summary-grid {
+    grid-template-columns: 120px 1fr;
+    gap: 8px 10px;
+  }
+  
+  /* Dashboard Grid */
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .dashboard-sidebar {
+    padding: 20px 16px;
+  }
+  
+  .dashboard-content-panel {
+    padding: 24px 16px;
+  }
+  
+  /* Footer Grid */
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 0 var(--spacing-mobile);
+  }
+}
